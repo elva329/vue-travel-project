@@ -1,9 +1,9 @@
 <template>
-    <div class="icons">
+  <div class="icons">
       <swiper>
          <swiper-slide v-for="(page, index) of pages" :key="index">
-          <div class="icon" 
-            v-for="item of page" 
+          <div class="icon"
+            v-for="item of page"
             :key="item.id"
           >
             <div class="icon-img">
@@ -13,8 +13,7 @@
         </div>
         </swiper-slide>
       </swiper>
-    </div>
-    
+  </div>
 </template>
 
 <script>
@@ -50,7 +49,7 @@ export default {
         },
         {
           id: '6',
-          imgUrl:' https://picbed.qunarzz.com/f5e5770393d759578962e53ee67798c8.png',
+          imgUrl: ' https://picbed.qunarzz.com/f5e5770393d759578962e53ee67798c8.png',
           desc: '海外酒店'
         },
         {
@@ -70,19 +69,19 @@ export default {
         }]
     }
   },
-   computed: {
-      pages () {
-        const pages = []
-        this.iconList.forEach((item, index) => {
-          const page = Math.floor(index / 8)
-          if (!pages[page]) {
-            pages[page] = []
-          }
-          pages[page].push(item)
-        })
-        return pages
-      }
-   }
+  computed: {
+    pages () {
+      const pages = []
+      this.iconList.forEach((item, index) => {
+        const page = Math.floor(index / 8)
+        if (!pages[page]) {
+          pages[page] = []
+        }
+        pages[page].push(item)
+      })
+      return pages
+    }
+  }
 }
 </script>
 
@@ -97,6 +96,7 @@ export default {
     overflow: hidden
     height: 0
     padding-bottom: 50%
+    margin-top: .2rem
     .icon
       position: relative
       overflow: hidden
@@ -126,5 +126,4 @@ export default {
         text-align: center
         color: $darkTextColor
         ellipsis()
-
 </style>
