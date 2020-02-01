@@ -20,7 +20,7 @@
 export default {
   name: 'HomeIcons',
   props: {
-    list: Array,
+    list: Array
   },
   data () {
     return {

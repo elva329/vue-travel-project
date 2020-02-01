@@ -33,12 +33,12 @@ export default {
       weekendList: []
     }
   },
-  methods:{
-    getHomeInfo(){
+  methods: {
+    getHomeInfo () {
       axios.get('/api/index.json')
-      .then(this.getHomeInfoSucc)
+        .then(this.getHomeInfoSucc)
     },
-    getHomeInfoSucc(res) {
+    getHomeInfoSucc (res) {
       res = res.data
       if (res.ret && res.data) {
         const data = res.data
@@ -51,7 +51,7 @@ export default {
     }
   },
   mounted () {
-    this.getHomeInfo() 
+    this.getHomeInfo()
   }
 }
 </script>
