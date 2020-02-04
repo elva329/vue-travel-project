@@ -27,7 +27,7 @@ export default {
   },
   data () {
     return {
-      lastCity:'',
+      lastCity: '',
       swiperList: [],
       iconList: [],
       recommendList: [],
@@ -62,7 +62,6 @@ export default {
       this.lastCity = this.city
       this.getHomeInfo()
     }
-
   }
 }
 </script>

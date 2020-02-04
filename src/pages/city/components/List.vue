@@ -75,7 +75,7 @@ export default {
       }
     }
   },
-    mounted () {
+  mounted () {
     this.scroll = new Bscroll(this.$refs.wrapper)
   }
 }
