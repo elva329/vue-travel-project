@@ -25,7 +25,7 @@ export default {
   data () {
     return {
       showGallery: false,
-      imgs: ['https://imgs.qunarzz.com/p/tts9/1706/30/219d20ea05310902.jpg_r_390x260x90_0f069e53.jpg','https://imgs.qunarzz.com/p/tts9/1706/30/219d20ea05310902.jpg_r_390x260x90_0f069e53.jpg']
+      imgs: ['https://imgs.qunarzz.com/p/tts9/1706/30/219d20ea05310902.jpg_r_390x260x90_0f069e53.jpg', 'https://imgs.qunarzz.com/p/tts9/1706/30/219d20ea05310902.jpg_r_390x260x90_0f069e53.jpg']
     }
   },
   methods: {
