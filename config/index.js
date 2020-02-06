@@ -57,7 +57,7 @@ module.exports = {
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',  //update the project folder path when put to server
+    assetsPublicPath: '/travel',  //update the project folder path when put to server
 
     /**
      * Source Maps
